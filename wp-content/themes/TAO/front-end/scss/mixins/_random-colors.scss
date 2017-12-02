@@ -1,0 +1,24 @@
+$blue: #3ea5ce;
+$green: #99c712;
+$yellow: lighten(#ffba00, 5%);
+$red: #E53B3A;
+$colors: $blue, $green, $yellow, $red;
+$key: random( length($colors) );
+$nth: nth( $colors, $key );
+
+$main-color: $nth !default;
+
+@mixin backgrounds($c, $y) {
+  background: $c;
+  @for $i from 1 through $y {
+    $k: 3%;
+    $j: $i - 1;
+
+    @if $i == 1 {
+      &:nth-child(#{$i}) { background: $c; }
+    }
+    @else {
+      &:nth-child(#{$i}) { background: darken($c, ($k * $j)); }
+    }
+  }
+}

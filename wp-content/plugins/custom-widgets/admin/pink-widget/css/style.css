@@ -1,0 +1,16 @@
+.curriculum-post-widget .curriculum-post-item-wrap {margin-bottom: 25px;padding: 0 12.5px;}
+.curriculum-post-widget .curriculum-row-wrapper{margin: 0 -12.5px;}
+.curriculum-post-widget .curriculum-post-item{display: flex;flex-wrap: wrap;}
+.curriculum-post-widget .cm-post-image {width: 157px;}
+.curriculum-post-widget .cm-post-image.mobile-image {display: none;}
+.curriculum-post-widget .cm-post-image img {max-width: 100%;height: auto;}
+.curriculum-post-widget .cm-post-content {width: calc(100% - 157px);padding: 15px 20px;background-color: #506D86;}
+.curriculum-post-widget .cm-post-content p {margin-bottom: 0;}
+.curriculum-post-widget .cm-post-content h4 {display: inline-block;border-bottom: 0.5px solid #fff;}
+.curriculum-post-widget .cm-post-content h4 a {color: #fff;font-size: 22px;line-height: 1.3;font-family: Gotham;font-weight: 700;}
+.curriculum-post-widget .cm-post-content div {font-family: Whitney;font-weight: 300;font-size: 17px;color: #fff;line-height: 1.4;}
+@media (max-width: 991px) {
+    .curriculum-post-widget .cm-post-image,.curriculum-post-widget .cm-post-content {width: 100%;}
+    .curriculum-post-widget .cm-post-image {display: none;}
+    .curriculum-post-widget .cm-post-image.mobile-image {display: block;}
+}
